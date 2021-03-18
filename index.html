@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org", 
+            "@type" : "Article", 
+            "name" : "Loïc Rojon",
+            "URL" : "http://lrojon.github.io"
+            "author" : { 
+                "@type" : "Person", 
+                "name" : "Loïc Rojon" 
+            }, 
+            "image" : "Assets/Image/moi.png" 
+        } 
+    </script>
+    <meta name="description" content="Site de présentation de Loïc Rojon, son CV, ses projets.">
+    <meta name="application-name" content="Portfolio de Loïc Rojon">
+    <meta name="author" content="Loïc Rojon">
+    <meta name="keywords" content="Portfolio,Loïc Rojon,Développeur,Programmation">
+    <meta name="creator" content="Loïc Rojon">
+    <meta name="publisher" content="Loïc Rojon">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/Icon/favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/gh/LRojon/LRojon.github.io/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/LRojon/LRojon.github.io/node_modules/jquery-scrollify/jquery.scrollify.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zugoripls/animate-css-jquery/src/dist/jquery.animator-beta.min.js"></script>
+    <script src="Assets/Script/skill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LRojon/LRojon.github.io/Assets/Style/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+        hr {
+            border-color: lightgray;
+        }
+
+        .borderHover {
+            border-radius: 500px;
+            border: white solid 10px;
+        }
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Loïc Rojon</title>
+</head>
+
+<body class="bg-dark" style="overflow: hidden; color: lightgray;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+        <span class="navbar-brand"><img src="Assets/Icon/favicon.png" width="30" class="img-fluid"></span>
+        <a class="navbar-brand" href="#">Loïc Rojon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#CV">Curriculum Vitae</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Projets</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#all">Tout les projets</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#map"><img width="25" style="border-radius: 500px;"
+                                src="Assets/Icon/map.ico"> Générateur de carte</a>
+                        <a class="dropdown-item" href="#planing"><img width="25" src="Assets/Icon/planing.ico">
+                            Planing</a>
+                        <a class="dropdown-item" href="#dungeon"><img width="25" style="border-radius: 500px;"
+                                src="Assets/Icon/dungeon.ico"> Dungeon Generator</a>
+                        <a class="dropdown-item" href="#albion"><img width="25" style="border-radius: 500px;"
+                                src="Assets/Icon/albion.ico"> Albion's Market</a>
+                        <a class="dropdown-item" href="#bestiaire"><img width="25" src="Assets/Icon/bestiaire.ico">
+                            Bestiaire</a>
+                        <a class="dropdown-item" href="#cardmaker"><img width="25" src="Assets/Icon/cardmaker.png"> CRUD
+                            de cartes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a target="blank" href="#about" class="nav-link">À propos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="content" class="container-fluid">
+        <div class="row" id="CV" tag style="margin-top: 5%;">
+            <div class="col-sm-4" style="text-align: center;">
+                <img style="border-radius: 5000px;" class="img-fluid" width="50%" src="Assets/Image/moi.png" alt="Moi">
+                <h1><u>Mes Coordonnées</u></h1>
+                <center>
+                    <table style="width: 65%;" class="table table-sm table-striped table-borderless text-light">
+                        <tr>
+                            <td><i class="fas fa-map-marker-alt"></i></td>
+                            <td>Adresse</td>
+                            <td style="text-align: right;">12 Rue Phillipe Goy, 69500, BRON</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-phone"></i></td>
+                            <td>Téléphone</td>
+                            <td style="text-align: right;">06.20.23.56.61</td style="text-align: right;">
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-at"></i></td>
+                            <td>Email</td>
+                            <td style="text-align: right;">loic.rojon@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-github"></i></td>
+                            <td>Github</td>
+                            <td style="text-align: right;"><a target="blank" href="https://github.com/LRojon">LRojon</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-linkedin-in"></i></td>
+                            <td>Linkedin</td>
+                            <td style="text-align: right;"><a target="blank"
+                                    href="https://www.linkedin.com/in/lo%C3%AFc-rojon-89a752180/">Loïc Rojon</a></td>
+                        </tr>
+                    </table>
+                </center>
+                <div style="font-size: 20px;">
+                    <a href="#CV2"><i class="fas fa-arrow-circle-down"></i> Expérience</a>
+                </div>
+            </div>
+            <div class="col-sm-8" id="skill">
+            </div>
+            <br>
+        </div>
+        <div class="row" id="CV2">
+            <div id="études" class="col-sm-12 col-lg-4" style="opacity: 0;top: 100px;">
+                <br><br><br><br>
+                <div class="bg-primary text-secondary" style="text-align: center;">
+                    <h1><u>Études</u></h1>
+                </div>
+                <div style="text-align: center;">
+                    <h4><strong>2019 - 2020 </strong><u>Titre RNCP Concepteur Développeur d'Application Numérique</u>
+                    </h4><br>
+                    IPI Lyon, Lyon
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <h4><strong>2017 - 2019 </strong><u>BTS Services Informatiques aux organisations</u></h4><br>
+                    Option B Solutions Logicielles et Applications Métiers<br>
+                    Lycée Jacques Brel, Vénissieux
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <h4><strong>2015 - 2017 </strong><u>Licence Maths-Info</u></h4><br>
+                    Université Claude Bernard Pendant 2 ans<br>
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <h4><strong>2015 </strong><u>Baccalauréat S-SI</u></h4><br>
+                    Lycée Léonard de Vinci, Villefontaine<br>
+                </div>
+                <center>
+                    <br>
+                    <br>
+                    <br>
+                    <div style="font-size: 20px;">
+                        <a href="#all"><i class="fas fa-arrow-circle-down"></i> Projets</a>
+                    </div>
+                </center>
+            </div>
+            <div id="stage" class="col-sm-12 col-lg-4" style="opacity: 0;top: 100px;">
+                <br><br><br><br>
+                <div class="bg-primary text-secondary" style="text-align: center;">
+                    <h1><u>Stages</u></h1>
+                </div>
+                <div style="text-align: center;">
+                    <h4><strong>2019 </strong><u>Association Fumetsu no yume</u></h4><br>
+                    Développeur en PHP, Symfony 4.<br>
+                    Conception du site de présentation de l'association.
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <h4><strong>2018 </strong><u>Carsat Rhône-Alpes</u></h4><br>
+                    Développeur en ASP.NET / C#.<br>
+                    Conception d'un outil de gestion de formation en interne.
+                </div>
+            </div>
+            <div id="emploi" class="col-sm-12 col-lg-4" style="opacity: 0;top: 100px;">
+                <br><br><br><br>
+                <div class="bg-primary text-secondary" style="text-align: center;">
+                    <h1><u>Emploi</u></h1>
+                </div>
+                <div style="text-align: center;">
+                    <h4><strong>2019 - 2020 </strong><u>Orange</u></h4><br>
+                    Développeur en PHP, Codeigniter.<br>
+                    Conception de module d'assistance. Refactoring de la base de données.
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <h4><strong>2017 et 2018 </strong><u>Kem One</u></h4><br>
+                    Opérateur services généreaux.<br>
+                    Travail d'été en poste 5x8.
+                </div>
+            </div>
+        </div>
+        <div class="row" id="all">
+            <div class="col-lg-12">
+                <br><br><br><br>
+                <div class="card-deck">
+                    <div class="card animated"  id="mapCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+                        <a href="#map" style="text-align: center;">
+                            <img class="card-img-top" style="width: 80%" src="Assets/Icon/map.ico" style="border-radius: 500px;">
+                            <h3 id="mapCardTitle" style="opacity: 0;text-align: center;" class="card-body">Générateur de
+                                carte</h3>
+                        </a>
+                    </div>
+                    <div class="card animated"  id="planingCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+                        <a href="#planing" style="text-align: center;">
+                            <img class="card-img-top" style="width: 80%" src="Assets/Icon/planing.ico">
+                            <h3 id="planingCardTitle" style="opacity: 0;text-align: center;" class="card-body">Planning
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="card animated"  id="dungeonCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+                        <a href="#dungeon" style="text-align: center;">
+                            <img class="card-img-top" style="width: 80%" style="border-radius: 500px;" src="Assets/Icon/dungeon.ico">
+                            <h3 id="dungeonCardTitle" style="opacity: 0;text-align: center;" class="card-body">Dungeon
+                                Generator</h3>
+                        </a>
+                    </div>
+                    <div class="card animated"  id="albionCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+                        <a href="#albion" style="text-align: center;">
+                            <img class="card-img-top" style="width: 80%" style="border-radius: 500px;" src="Assets/Icon/albion.ico">
+                            <h4 id="albionCardTitle" style="opacity: 0;text-align: center;" class="card-body">Albion's
+                                Market</h4>
+                        </a>
+                    </div>
+                    <div class="card animated"  id="bestiaireCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+                        <a href="#bestiaire" style="text-align: center;">
+                            <img class="card-img-top" style="width: 80%" src="Assets/Icon/bestiaire.ico">
+                            <h4 id="bestiaireCardTitle" style="opacity: 0;text-align: center;" class="card-body">
+                                Bestiaire</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card animated"  id="cardmakerCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+                        <a href="#cardmaker" style="text-align: center;">
+                            <img class="card-img-top" style="width: 80%" src="Assets/Icon/cardmaker.png">
+                            <h4 id="cardmakerCardTitle" style="opacity: 0;text-align: center;" class="card-body">
+                                Cardmaker</h4>
+                        </a>
+                    </div>
+                    <div class="card animated"  id="worldgenCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+                        <a href="#worldgen" style="text-align: center;">
+                            <img class="card-img-top" style="width: 80%" src="Assets/Icon/worldgen.png">
+                            <h4 id="worldgenCardTitle" style="opacity: 0;text-align: center;" class="card-body">
+                                Générateur de monde</h4>
+                        </a>
+                    </div>
+                    <div class="card animated"  id="fnyCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+                        <a href="#fny" style="text-align: center;">
+                            <img class="card-img-top" style="width: 80%" src="Assets/Icon/fny.png">
+                            <h4 id="fnyCardTitle" style="opacity: 0;text-align: center;" class="card-body">Fumetsu no
+                                yume</h4>
+                        </a>
+                    </div>
+                    <div class="card animated" id="cardmakerCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+
+                    </div>
+                    <div class="card animated" id="cardmakerCard"
+                        style="width: auto;opacity: 0;background-color: rgba(245, 245, 245, 0); border-color: rgba(245, 245, 245, 0);">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="map">
+            <div class="col-lg-8">
+                <br><br><br><br>
+                <h2>Générateur de cartes</h2>
+                <div id="mapCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="Assets/Image/genMap/genMap.png" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Fenêtre d'acceuil</h5>
+                                <p>Comporte la carte avec plusieurs teintes et les paramètres de génération</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/genMap/genLaby.png" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Fenêtre du labyrinthe</h5>
+                                <p>La génération se fait avec la touche entrer, et affiche le labyrinthe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#mapCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Précédement</span>
+                    </a>
+                    <a class="carousel-control-next" href="#mapCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <br><br><br><br><br><br>
+                <h3 style="text-align: center;"><u>Résumé</u></h3><br>
+                Ce logiciel (en C#, Winform) permet de générer une carte de monde selon<br>
+                certains paramètres. Il permet aussi de générer un labyrinthe.
+                <br><br>
+                Les cartes de monde sont générées à partir du bruit de Perlin, permettant de
+                créer un nuage de points aléatoires et cohérents entre eux. Puis les couleurs
+                sont appliquées selon la valeur retournée par le bruit, et sont considérées comme
+                la hauteur.
+                <br><br>
+                Les labyrinthes sont générés de façon à ce que le chemin couvre toute la surface
+                disponible. Ce seront des labyrinthes maniéristes, c'est à dire que d'un point
+                à un autre il n'existe qu'un seul et unique chemin.
+                <hr>
+                Lien de téléchargement: <a href="Assets/File/GenPerlin.zip">ici</a>.
+            </div>
+        </div>
+        <div class="row" id="planing">
+            <div class="col-lg-4">
+                <br><br><br><br><br><br>
+                <h3 style="text-align: center;"><u>Résumé</u></h3><br>
+                Suite à mon travail chez Kem One j'ai remarqué un planing difficile à
+                connaître (un cycle de 35 jours). J'ai donc programmé
+                cette application (en c#, Xamarin) pour connaître son poste
+                en fonction de l'équipe et du jour.
+                <hr>
+            </div>
+            <div class="col-lg-8" style="text-align: center;">
+                <br><br><br><br>
+                <h2>Planing Kem One</h2>
+                <center>
+                    <div id="planingCarousel" class="carousel slide" data-ride="carousel" style="width: 35%;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="Assets/Image/planing/planing1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/planing/planing2.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/planing/planing3.png" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#planingCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Précédement</span>
+                        </a>
+                        <a class="carousel-control-next" href="#planingCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="row" id="dungeon">
+            <div class="col-lg-8" style="text-align: center;">
+                <br><br><br><br>
+                <h2>Donjon Procédural</h2>
+                <div id="dungeonCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="Assets/Image/dungeon/code.png" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Code C#</h5>
+                                <p>Exemple de code.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/dungeon/interface.png" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Interface</h5>
+                                <p>Interface graphique de Unity.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/dungeon/Map.png" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Carte</h5>
+                                <p>Résultat de la génération.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/dungeon/inGame.png" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Le jeu</h5>
+                                <p>Résultat en jeu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#dungeonCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Précédement</span>
+                    </a>
+                    <a class="carousel-control-next" href="#dungeonCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <br><br><br><br><br><br>
+                <h3 style="text-align: center;"><u>Résumé</u></h3><br>
+                C'est un générateur de donjon procédural, applicable à un
+                projet Unity (C#). Les donjons sont générés aléatoirement
+                mais en suivant des règles pour garder une cohérence.
+                <br><br>
+                Le générateur utilise des pièces préfabriquées qu'il
+                assemble de façon cohérente jusqu'à la sortie de l'étage.
+                Il génère aussi quelque petits chemins autres que le principal.
+                <hr>
+                <i class="fab fa-github"></i> <a target="about:blank"
+                    href="https://github.com/LRojon/Dungeon_Generator">github.com/LRojon/Dungeon_Generator</a>
+            </div>
+        </div>
+        <div class="row" id="albion">
+            <div class="col-lg-4">
+                <br><br><br><br><br><br>
+                <h3 style="text-align: center;"><u>Résumé</u></h3><br>
+                Albion online est un jeu en ligne où l'économie est développée
+                et laissée au joueurs. Dans ce cadre cet outil montrant
+                les prix les plus bas de chaque marché est utile.
+                <br>
+                <br>
+                Une fois la recherche effectuée, une liste de résultats apparait.
+                Chaque ligne contient le nom de la ville où se trouve la ressource,
+                une image du produit, son prix le plus bas, et la date de la
+                mise en vente.
+                <br><br>
+                Développé avec Xamarin.Android et C#
+                <hr>
+                Fichier .apk: <a href="Assets/File/AlbionMarket.apk">ici</a>.
+            </div>
+            <div class="col-lg-8" style="text-align: center;">
+                <br><br><br><br>
+                <h2>Outil économique - Albion online</h2>
+                <center>
+                    <div id="albionCarousel" class="carousel slide" data-ride="carousel" style="width: 35%;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="Assets/Image/albion/search.png" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Page de recherche</h5>
+                                    <p>Comporte tous les critères de recherche.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/albion/result1.png" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Résultat</h5>
+                                    <p>Résultat pour un type de ressource sur un seul marché.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/albion/result2.png" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Comparatif</h5>
+                                    <p>Résultat comparatif d'une même ressource sur plusieurs marchés</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#albionCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Précédement</span>
+                        </a>
+                        <a class="carousel-control-next" href="#albionCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="row" id="bestiaire">
+            <div class="col-lg-8" style="text-align: center;">
+                <br><br><br><br>
+                <h2>Bestiaire Chroniques oubliées</h2>
+                <div id="bestiaireCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="Assets/Image/bestiaire/creature.PNG" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Onglet d'acceuil</h5>
+                                <p>Affiche la liste des monstres existants, et permet d'afficher les details pour chaque
+                                    monstre.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/bestiaire/loot.PNG" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Récompense</h5>
+                                <p>Génère des récompenses selon le monstre abattu.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/bestiaire/skill.PNG" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Onglet des compétences</h5>
+                                <p>
+                                    Affiche la liste des compétences organisées par voie puis par rang.<br>
+                                    Affiche l'effet et les utilisateurs de la compétence.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/bestiaire/abilities.PNG" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Onglet des capacités</h5>
+                                <p>Affiche la liste des capacités ainsi que leurs effets et leurs utilisateurs.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/bestiaire/health.PNG" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Onglet des états</h5>
+                                <p>Pas beaucoup de rapport avec le bestiaire, mais un mémo très utile.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/bestiaire/new.PNG" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Fenêtre de création</h5>
+                                <p>Permet de créer ses propres monstres.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#bestiaireCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Précédement</span>
+                    </a>
+                    <a class="carousel-control-next" href="#bestiaireCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <br><br><br><br><br><br>
+                <h3 style="text-align: center;"><u>Résumé</u></h3><br>
+                Ce site sert au joueur du jeu de rôle <u>Chroniques oubliées</u>.
+                C'est un receuil de tous les monstres disponibles dans le livre
+                de base. Cependant, ce receuil est communautaire. Tout le monde
+                peut ajouter et pourra modifier des monstres à sa convenance.
+                <br><br>
+                Ce bestiaire permet de voir les monstres ainsi que leurs capacités
+                et de leurs compétences. Il a été fait de sorte à ce que tout soit
+                connecté, ainsi on change facilement d'un monstre au descriptif de
+                sa compétence.
+                <br><br>
+                Le site est en HTML, CSS, JQuery. Il utilise une base de données
+                via une API PHP.
+                <hr>
+                Site <a target="about:blank" href="http://bestiaire.alwaysdata.net/">ici</a>. <br><br>
+                <i class="fab fa-github"></i> <a target="about:blank"
+                    href="https://github.com/LRojon/Bestiary">github.com/LRojon/Bestiary</a>
+            </div>
+        </div>
+        <div class="row" id="cardmaker">
+            <div class="col-lg-4">
+                <br><br><br><br><br><br>
+                <h3 style="text-align: center;"><u>Résumé</u></h3><br>
+                Je monte un projet avec un ami visant à mettre en place un jeu de cartes.
+                J'ai conçu ce site pour pouvoir créer de nouvelles cartes plus facilement,
+                avec une approche communautaire à terme. En effet, toute personne
+                pourra ajouter la carte qu'il souhaite, puis elle sera examinée par un jury,
+                avant d'être intégrée ou non au jeu.
+                <br>
+                <br>
+                Il est posible de filtrer la recherche par le nom via la barre de recherche,
+                mais aussi via une liste déroulante. J'ai ajouté une fonction de tri, accessible par une
+                liste déroulante elle aussi.
+                <br>
+                <br>
+                Le site est programmé en HTML, CSS, JS. Avec le framework CSS Bootstrap 4,
+                majoritairement en Vanilla JS, et une touche de JQuery pour l'utilisation de
+                Bootstrap 4. Le site interroge une API codée en Python avec le bibliothèque Flask.
+                <hr>
+                Site: <a target="blank" href="http://card.lrojon.fr">ici</a>. <br><br>
+                <i class="fab fa-github"></i> <a target="about:blank" href="https://github.com/LRojon/RPG-GO-Maker">git
+                    du site</a> <br><br>
+                <i class="fab fa-github"></i> <a target="about:blank" href="https://github.com/LRojon/apiPython">git de
+                    l'API</a>
+            </div>
+            <div class="col-lg-8" style="text-align: center;">
+                <br><br><br><br>
+                <h2>Cardmaker</h2>
+                <center>
+                    <div id="cardmakerCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="Assets/Image/cardmaker/Cardmaker.png" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Page d'acceuil</h5>
+                                    <p>Comporte toutes les cartes, triées en fonction de leur id.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/cardmaker/CardmakerAdd.png"
+                                    alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Ajout</h5>
+                                    <p>Formulaire pour ajouter une carte.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/cardmaker/CardmakerModify.png"
+                                    alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Modification</h5>
+                                    <p>Formulaire pour modifier une carte existante.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#cardmakerCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Précédement</span>
+                        </a>
+                        <a class="carousel-control-next" href="#cardmakerCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="row" id="worldgen">
+            <div class="col-lg-8" style="text-align: center;">
+                <br><br><br><br>
+                <h2>Générateur de monde</h2>
+                <div id="worldgenCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="Assets/Image/worldgen/Carte_du_monde.png" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Acceuil</h5>
+                                <p>Affiche la carte du monde, avec les royaumes en surbrillance.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/worldgen/Info_Nation.png" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Royaume</h5>
+                                <p>Ecran d'information par royaume.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/worldgen/Info_Ville.png" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Ville</h5>
+                                <p>Ecran d'information par ville.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Image/worldgen/Info_Dieux.png" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark"
+                                style="opacity: 0.8;border-radius: 10px">
+                                <h5>Dieux</h5>
+                                <p>Ecran d'information par dieu, avec leur zone d'influence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#worldgenCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Précédement</span>
+                    </a>
+                    <a class="carousel-control-next" href="#worldgenCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <br><br><br><br><br><br>
+                <h3 style="text-align: center;"><u>Résumé</u></h3><br>
+                Un projet hérité du <a href="#map">Générateur de cartes</a>. En plus de générer une carte, le logiciel
+                génère des pays, des villes, ainsi qu'un panthéon de dieux. Un outil simple
+                d'utilisation, à destination des maîtres de jeu lors de séances de jeu de rôle.
+                <br><br>
+                Grâce à ce logiciel, on peut voir les données citées ci dessus, mais aussi sauvegarder
+                ces données pour les reprendre plus tard.
+                <br><br>
+                Logiciel programmé en C# avec WPF.
+                <hr>
+                <i class="fab fa-github"></i> <a target="about:blank"
+                    href="https://github.com/LRojon/WorldGen">github.com/LRojon/WorldGen</a>
+            </div>
+        </div>
+        <div class="row" id="fny">
+            <div class="col-lg-4">
+                <br><br><br><br><br><br>
+                <h3 style="text-align: center;"><u>Résumé</u></h3><br>
+                Lors d'un stage, j'ai approché une association de jeux de société qui ne possédaient
+                pas de site, j'en ai donc créé un.
+                <br>
+                <br>
+                Le site permet aux visiteurs de voir les articles postés par le bureau de l'association,
+                ainsi que les évènements, et le réglement. Il permet aussi de faire une préinscription.
+                Il contient un panneau de contrôle côté administrateur. Ce dernier permet de voir les tâches
+                à faire, les préinscripitons, la liste des membres, les réunions à venir et passées ainsi que
+                le compte rendu de ces réunions. Le dernier onglet est réservé aux statistiques du site.
+                <br>
+                <br>
+                Ce projet est codé en PHP avec le framework Symfony 4, et MySQL côté base de données.
+                <hr>
+                Site: <a target="blank" href="http://fumetsunoyume.alwaysdata.net">ici</a>. <br><br>
+            </div>
+            <div class="col-lg-8" style="text-align: center;">
+                <br><br><br><br>
+                <h2>Fumetsu no yume</h2>
+                <center>
+                    <div id="fnyCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="Assets/Image/fny/acceuil.png" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Page d'acceuil</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/fny/Article.png" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Ajout d'article</h5>
+                                    <p>Formulaire pour ajouter un article.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/fny/event.png" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Ajout d'évènements</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/fny/inscription.png" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Préinscription</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/fny/tache.png" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Tâches</h5>
+                                    <p>Tâche sur le panneau de contrôle.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/fny/account.png" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Compte rendu de réunion</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Image/fny/account2.png" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block bg-dark"
+                                    style="opacity: 0.8;border-radius: 10px">
+                                    <h5>Compte rendu de réunion</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#fnyCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Précédement</span>
+                        </a>
+                        <a class="carousel-control-next" href="#fnyCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+
+        <div class="row" id="about">
+            <div class="col-lg-12">
+                <br><br><br><br>
+                Cette icone <img src="Assets/Icon/bestiaire.ico" width="25"> à été fait par <a target="blank"
+                    href="https://www.freepik.com/">freepik</a>.
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#mapIcon').hover(function () {
+        $('#mapIcon').toggleClass('borderHover');
+    });
+</script>
+
+</html>
